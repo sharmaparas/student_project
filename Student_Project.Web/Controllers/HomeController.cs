@@ -13,16 +13,16 @@ namespace Student_Project.Web.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult Add()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Add a student data.";
 
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult ViewStudent()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "View student data here.";
 
             return View();
         }
