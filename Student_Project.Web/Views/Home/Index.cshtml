@@ -1,14 +1,8 @@
 ﻿<div ng-app="studentdata">
     <div class="h1">Student data app</div><br/>
-    <div>This app provides features to add and delete data student data</div>
-    <br /><br />
     <div ng-controller="MainController">
-        <table class="table">
-            <tr class="row"> 
-                <td ng-repeat="img in imageData">
-                    <img ng-src="{{img.src}}" class="img-responsive" title="{{img.description}}" alt="{{img.description}}" ng-click="display()"/>
-                </td>
-            </tr>
-        </table>
+        <div>This app provides features to add and delete data student data</div>
+        <div ng-include="'../Template/DefaultHomePage.cshtml'">            
+        </div>  
     </div>
 </div>

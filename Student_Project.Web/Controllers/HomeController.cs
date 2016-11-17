@@ -12,19 +12,5 @@ namespace Student_Project.Web.Controllers
         {
             return View();
         }
-
-        public ActionResult Add()
-        {
-            ViewBag.Message = "Add a student data.";
-
-            return View();
-        }
-
-        public ActionResult ViewStudent()
-        {
-            ViewBag.Message = "View student data here.";
-
-            return View();
-        }
     }
 }
