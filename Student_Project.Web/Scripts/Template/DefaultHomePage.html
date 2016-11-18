@@ -1,0 +1,9 @@
+﻿<div>This app provides features to add and delete data student data</div>  
+<br /><br />
+<table class="table">
+    <tr class="row">
+        <td ng-repeat="img in imageData">
+            <button class="thumbnail"><img ng-src="{{img.src}}" class="img-responsive" title="{{img.description}}" alt="{{img.description}}" ng-click="display(img.id)"/></button>
+        </td>
+    </tr>
+</table>

@@ -1,0 +1,31 @@
+﻿<div class="nav-tabs">
+    <button class="btn btn-default" ng-click="display(0)">Back</button>
+    <br />
+    <br />
+</div>
+<div class="page-header h3">Add Student</div>
+<form name="studentAddForm" class="form-inline">
+    <div class="form-group">
+        <label class="control-label col-sm-3">{{NameText}}</label>
+        <div class="col-sm-9">
+            <input class="form-control" type="text" ng-model="name" placeholder="Enter student name" maxlength="100" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-3">{{IDText}}</label>
+        <div class="col-sm-9">
+            <input class="form-control" type="text" ng-model="id" maxlength="10" placeholder="Student ID" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-3">{{AgeText}}</label>
+        <div class="col-sm-9">
+            <input class="form-control" type="text" ng-model="age" maxlength="3" placeholder="Student age" />
+        </div>        
+    </div>
+    <div class="form-group">
+        <div class="col-sm-3">
+            <button type="submit" class="btn btn-default">Add</button>
+        </div>
+    </div>
+</form>  

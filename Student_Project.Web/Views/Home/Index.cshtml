@@ -1,8 +1,9 @@
 ﻿<div ng-app="studentdata">
     <div class="h1">Student data app</div><br/>
-    <div ng-controller="MainController">
-        <div>This app provides features to add and delete data student data</div>
-        <div ng-include="'../Template/DefaultHomePage.cshtml'">            
-        </div>  
+    <div ng-controller="MainController">           
+
+        <div ng-hide="viewID == 1 || viewID==2" ng-include="template[0]"></div>
+        <div ng-show="viewID ==1" ng-include="template[viewID]" ></div>                 
+        <div ng-show="viewID ==2" ng-include="template[2]"></div>   
     </div>
 </div>
